@@ -1,7 +1,5 @@
 # Candidate Referral Management System
 
-![Dashboard Preview](./client/src/assets/dashboard-screenshot.png)
-![Form Preview](./client/src/assets/form-screenshot.png)
 
 ## Features Implemented
 
@@ -61,7 +59,7 @@
 │   └── package.json         # Backend dependencies
 └── README.md                # Project documentation
 ## How to Run Locally
-
+![Dashboard](./client/src/assets/Screenshot%20(1525).png)
 ### Prerequisites
 - Node.js (v16+)
 - MongoDB (local or Atlas cluster)
