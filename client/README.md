@@ -1,12 +1,51 @@
-# React + Vite
+# Candidate Referral Management System - MERN Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Dashboard Screenshot](./client/src/assets/Screenshot(1524).png)
+![Referral Form Screenshot](./client/src/assets/Screenshot(1522).png)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A full-stack web application for managing candidate referrals, built with the MERN stack (MongoDB, Express, React, Node.js). This system allows users to:
 
-## Expanding the ESLint configuration
+- Refer new candidates
+- View and filter existing candidates
+- Update candidate status (Pending/Reviewed/Hired)
+- Search candidates by job title or status
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+### Frontend (React)
+- Dashboard displaying all referred candidates
+- Search and filter functionality
+- Candidate referral form with validation
+- Status update interface
+- Responsive design with Material-UI
+
+### Backend (Node.js/Express)
+- RESTful API endpoints
+- MongoDB database integration
+- File upload handling (PDF resumes)
+- Data validation
+- Error handling
+
+## Technologies Used
+
+- **Frontend**: React, Material-UI, Axios, Formik, Yup
+- **Backend**: Node.js, Express, Mongoose, Multer
+- **Database**: MongoDB (with MongoDB Atlas for cloud deployment)
+- **Build Tools**: Vite (or Create React App)
+- **Deployment**: Vercel (frontend), Render/Heroku (backend)
+
+## Prerequisites
+
+Before running the project, ensure you have installed:
+- Node.js (v14 or higher)
+- npm or yarn
+- MongoDB (local or Atlas cluster)
+
+## Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/candidate-referral-system.git
+cd candidate-referral-system
