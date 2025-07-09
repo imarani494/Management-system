@@ -35,7 +35,10 @@ A full-stack web application for managing candidate referrals, built with the ME
 - **Database**: MongoDB (with MongoDB Atlas for cloud deployment)
 - **Build Tools**: Vite (or Create React App)
 - **Deployment**: Vercel (frontend), Render/Heroku (backend)
+<img src="./client/src/assets/Screenshot(1524).png" width="600">
 
+### Referral Form
+<img src="./client/src/assets/Screenshot(1522).png" width="600">
 ## Prerequisites
 
 Before running the project, ensure you have installed:
