@@ -41,9 +41,8 @@
 ├── .env.development          # Frontend env vars
 ├── .env.production
 └── package.json
-![Dashboard](./client/src/assets/Screenshot%20(1524).png)
 
-
+![Dashboard](./client/src/assets/Screenshot%20(1525).png)
 ### Backend
 - **REST API**: CRUD operations for candidates
 - **File Handling**: Secure PDF uploads
@@ -59,7 +58,8 @@
 │   └── package.json         # Backend dependencies
 └── README.md                # Project documentation
 ## How to Run Locally
-![Dashboard](./client/src/assets/Screenshot%20(1525).png)
+![Dashboard](./client/src/assets/Screenshot%20(1524).png)
+
 ### Prerequisites
 - Node.js (v16+)
 - MongoDB (local or Atlas cluster)
