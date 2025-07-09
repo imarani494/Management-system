@@ -69,6 +69,9 @@ cd ../client
 npm install
 3. Set up environment variables
 Create a .env file in the server directory:
+- ![alt text](./client/src/assets/)
+
+- Management-system\client\src\assets\Screenshot(1524).png
 
 env
 MONGODB_URI=mongodb://localhost:27017/candidate_referral
