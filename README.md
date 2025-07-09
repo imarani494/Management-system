@@ -1,7 +1,4 @@
-# Candidate Referral Management System - MERN Stack
 
-![Dashboard Screenshot](./client/src/assets/Screenshot(1524).png)
-![Referral Form Screenshot](./client/src/assets/Screenshot(1522).png)
 
 ## Overview
 
@@ -36,7 +33,8 @@ A full-stack web application for managing candidate referrals, built with the ME
 - **Build Tools**: Vite (or Create React App)
 - **Deployment**: Vercel (frontend), Render/Heroku (backend)
 <img src="./client/src/assets/Screenshot(1524).png" width="600">
-
+![Dashboard Screenshot](./client/src/assets/dashboard-screenshot.png)
+![Referral Form Screenshot](./client/src/assets/referral-form-screenshot.png)
 ### Referral Form
 <img src="./client/src/assets/Screenshot(1522).png" width="600">
 ## Prerequisites
