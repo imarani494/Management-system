@@ -25,11 +25,13 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router basename="/">
         <Navbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/refer" element={<ReferralForm />} />
+       
+          <Route path="*" element={<Dashboard />} />
         </Routes>
       </Router>
     </ThemeProvider>

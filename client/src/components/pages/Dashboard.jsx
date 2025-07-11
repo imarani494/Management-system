@@ -25,10 +25,12 @@ const Dashboard = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
 
+ const apiUrl = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     const fetchCandidates = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/candidates', {
+        const response = await axios.get(`${apiUrl}/api/candidates`, {
           params: {
             jobTitle: searchTerm,
             status: statusFilter
@@ -47,7 +49,7 @@ const Dashboard = () => {
 
   const handleStatusChange = async (id, newStatus) => {
     try {
-      await axios.put(`http://localhost:5000/api/candidates/${id}/status`, {
+      await axios.put(`${apiUrl}/api/candidates/${id}/status`, {
         status: newStatus
       });
       setCandidates(candidates.map(candidate =>
@@ -123,7 +125,7 @@ const Dashboard = () => {
                   {candidate.resumeUrl && (
                     <Typography variant="body2">
                       <a
-                        href={`http://localhost:5000/${candidate.resumeUrl}`}
+                        href={`${apiUrl}/${candidate.resumeUrl}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

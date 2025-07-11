@@ -22,6 +22,8 @@ const ReferralForm = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
   const [resumeFile, setResumeFile] = useState(null);
+
+   const apiUrl = import.meta.env.VITE_API_URL;
   const navigate = useNavigate();
 
   const validationSchema = Yup.object({
@@ -61,7 +63,7 @@ const ReferralForm = () => {
           formData.append('resume', resumeFile);
         }
 
-        await axios.post('http://localhost:5000/api/candidates', formData, {
+        await axios.post(`${apiUrl}/api/candidates`, formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
