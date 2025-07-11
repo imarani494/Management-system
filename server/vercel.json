@@ -2,18 +2,24 @@
   "version": 2,
   "builds": [
     {
-      "src": "client/build/**/*",
-      "use": "@vercel/static-build"
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"  
+      }
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "server/api/$1"
+      "dest": "server/api/$1" 
     },
     {
       "src": "/(.*)",
-      "dest": "client/build/index.html"
+      "dest": "client/build/$1", 
+      "headers": {
+        "Cache-Control": "s-maxage=1, stale-while-revalidate=59"
+      }
     }
   ]
 }
