@@ -63,7 +63,7 @@ const ReferralForm = () => {
           formData.append('resume', resumeFile);
         }
 
-        await axios.post(`${apiUrl}/api/candidates`, formData, {
+        await axios.post(`https://management-system-1-ptw5.onrender.com/api/candidates`, formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },

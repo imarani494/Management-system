@@ -30,7 +30,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchCandidates = async () => {
       try {
-        const response = await axios.get(`${apiUrl}/api/candidates`, {
+        const response = await axios.get(`https://management-system-1-ptw5.onrender.com/api/candidates`, {
           params: {
             jobTitle: searchTerm,
             status: statusFilter
@@ -49,7 +49,7 @@ const Dashboard = () => {
 
   const handleStatusChange = async (id, newStatus) => {
     try {
-      await axios.put(`${apiUrl}/api/candidates/${id}/status`, {
+      await axios.put(`https://management-system-1-ptw5.onrender.com/api/candidates/${id}/status`, {
         status: newStatus
       });
       setCandidates(candidates.map(candidate =>
@@ -125,7 +125,7 @@ const Dashboard = () => {
                   {candidate.resumeUrl && (
                     <Typography variant="body2">
                       <a
-                        href={`${apiUrl}/${candidate.resumeUrl}`}
+                        href={`https://management-system-1-ptw5.onrender.com/${candidate.resumeUrl}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
